@@ -1,0 +1,21 @@
+<form action="/login" method="post">
+    <% if(messages.error) { %>
+    <%= messages.error%>
+    <% } %>
+    <h1>Login</h1>
+    <div>
+        <label for="name">Email</label>
+        <input type="email" name="email" placeholder="test@test.com" id="emasil" required/>
+    </div>
+
+    
+    <div>
+        <label for="name">Password</label>
+        <input type="password" name="password" placeholder="*****" id="password" required/>
+    </div>
+
+    <button type="submit">Login!</button>
+</form>
+
+
+<a href="/login/google">Sign with Google!</a>
